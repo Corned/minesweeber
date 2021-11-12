@@ -15,8 +15,8 @@ const Mine = ({ handleClick, isMine, mineSelected}) => {
 }
 
 function App() {
-  const [ width, setWidth ] = useState(10)
-  const [ height, setHeight ] = useState(10)
+  const [ width ] = useState(10)
+  const [ height ] = useState(10)
   const [ mine, setMine ] = useState(-1)
 
   const handleClick = (location) => {
