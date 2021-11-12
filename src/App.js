@@ -20,7 +20,7 @@ function App() {
   const [ mine, setMine ] = useState(-1)
 
   const handleClick = (location) => {
-    if (mine > 0) return
+    if (mine >= 0) return
 
     setMine(location)
   }
@@ -36,12 +36,12 @@ function App() {
       <div className="grid" style={{ gridTemplateColumns: `repeat(${width}, 50px)`, gridAutoRows: 50 }}>
         {
           Array.from({ length: width * height }).map((_, i) => (
-            <Mine isMine={i === mine} mineSelected={mine > 0} handleClick={() => handleClick(i)}/>
+            <Mine isMine={i === mine} mineSelected={mine >= 0} handleClick={() => handleClick(i)}/>
           ))
         }
       </div>
 
-      { mine > 0 &&
+      { mine >= 0 &&
         <button className="reset" onClick={restart}>reset</button>
       }
 
