@@ -1,0 +1,54 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.submitform {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 30px 20px 30px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto 40px auto;
+  gap: 10px;
+  font-family: monospace;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.submitform input {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+button {
+  border-radius: 6px;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}

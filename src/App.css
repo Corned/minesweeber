@@ -1,51 +1,49 @@
+* {
+  font-family: monospace;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 100px 0 0 0;
+  height: 100%;
 }
 
-.grid {
+nav {
+  padding: 20px;
   display: grid;
-  gap: 3px;
-  margin: 0 auto;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  justify-content: center;
 }
 
-
-.cell {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+nav button {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
   border-radius: 4px;
+}
+
+nav button:hover {
   cursor: pointer;
-
-  display: flex;
-  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.fail {
-  border: 1px solid red;
-  background-color: rgba(255, 0, 0, 0.1);
-}
-
-.cell > * {
-  width: 80%;
-  height: 80%;
-  margin: auto;
-}
-
-.reset {
-  margin: 20px auto 0;
-  padding: 10px 30px;
-  font-weight: 600;
-  font-size: 30px;
+h1 {
+  font-size: 40px;
 }
 
 footer {
-  position: absolute;
-  width: 100vw;
-  bottom: 20px;
-
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  margin-top: auto;
+  padding: 20px 0;
 }
+
