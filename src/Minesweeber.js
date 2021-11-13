@@ -47,7 +47,6 @@ function Minesweeber() {
   )
 
   const [ gameover, setGameover ] = useState(false)
-  const [ name, setName ] = useState("")
   const [ showPopup, setShowPopup ] = useState(false)
 
   const handleClick = (location) => {
@@ -104,10 +103,6 @@ function Minesweeber() {
         isBomb: false
       }))
     )
-  }
-
-  const closepopup = () => {
-
   }
 
   return (

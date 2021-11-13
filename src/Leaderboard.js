@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 import "./Leaderboard.css"
 
 const scores = [

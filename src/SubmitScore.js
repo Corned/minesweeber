@@ -7,7 +7,7 @@ function SubmitScore({ close }) {
   const [ fadeIn, setFadeIn ] = useState(false)
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
+    setTimeout(() => {
       setFadeIn(true)
     }, 1000)
 
